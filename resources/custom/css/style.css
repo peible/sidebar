@@ -1,0 +1,80 @@
+body{
+    
+}
+
+.wrapper{
+
+}
+
+.sidebar-wrapper{
+    margin-left: -14rem;
+    background-color: #FAFAFA;
+    transition: margin-left 1s ease;
+}
+
+
+.sidebar-wrapper.navopen{
+    margin-left: 0;
+}
+
+.sidebar-title{
+    width: 14rem;/* ADDED */
+    padding: .4rem 0 .4rem .8rem;
+    position: absolute;/* ADDED */
+    background-color: #FAFAFA;/* ADDED */
+}
+
+.sidebar-title i{
+    font-size: 2rem;
+}
+
+.sidebar-title span{
+    font-size: 1.7rem;
+}
+
+.sidebar-content{
+    width: 14rem;
+    padding-top: 3.4rem;  /* ADDED */
+}
+
+.sidebar-element{
+    padding: .3rem 0 .3rem .8rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: border-left .5s ease, padding-left .5s ease, background-color .5s ease ;
+}
+
+
+.sidebar-element:hover{
+    border-left: .3rem solid #DB5461;
+    padding-left: 2.8rem;
+    background-color: #E3F2FD;
+}
+
+.sidebar-child{
+    display: none;
+    transition: display 2s ease;
+}
+
+.sidebar-child.submenuopen{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-child a{
+    padding: .3rem 0 .3rem 1.6rem;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: border-left .5s ease, padding-left .5s ease, background-color .5s ease ;
+}
+
+.sidebar-child a:hover{
+    border-left: .3rem solid #DB5461;
+    padding-left: 2.8rem;
+    background-color: #E3F2FD;
+}
+
+
+.content-wrapper{
+    background-color: white;
+}

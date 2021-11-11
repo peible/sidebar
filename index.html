@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="resources/custom/css/style.css">
+    <script src="resources/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper d-flex">
+        <div class="sidebar-wrapper vh-100">
+            <div class="sidebar-title border-bottom">
+                <i class="fas fa-heartbeat"></i><span>HealtyStats</span>
+            </div>
+            <div class="sidebar-content d-flex flex-column overflow-auto h-100">
+                <a href="#" class="sidebar-element">Dashboard</a>
+                <div class="sidebar-child">
+                    <a href="#">Children</a>
+                    <a href="#">Children</a>
+                </div>
+                <a href="#" class="sidebar-element">Ciccio</a>
+                <div class="sidebar-child">
+                    <a href="#">Ciccio</a>
+                    <a href="#">Ciccio</a>
+                </div>
+                <a href="#" class="sidebar-element">Pluto</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+                <a href="#" class="sidebar-element">Paperino</a>
+            </div>
+        </div>
+        <div class="content-wrapper vw-100">
+            <nav class="navbar border-bottom">
+                <button type="button" id="collapseNavbar" class="btn"><i class="fas fa-bars"></i></button>
+                <div>
+                    
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $("#collapseNavbar").click(function (e) {
+                e.preventDefault();
+                $(".sidebar-wrapper").toggleClass("navopen");
+            });
+
+            $(".sidebar-element").click(function (e) {
+                e.preventDefault();
+                console.log("here");
+                if(!$( this ).next( ".sidebar-child" ).hasClass("submenuopen")){
+                    $( ".sidebar-child" ).removeClass("submenuopen");
+                }
+                $(this).next( ".sidebar-child" ).toggleClass("submenuopen");
+            });
+        });
+    </script>
+</body>
+
+</html>
